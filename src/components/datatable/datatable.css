@@ -1,0 +1,33 @@
+.table-container{
+    padding: 0 10px;
+    margin: 50px 100px;    
+    display: flex;
+    flex-direction: column;
+
+}
+.heading{
+    font-size: 4vw;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.35px;
+    color: #000;
+    padding: 8px 5px;
+    vertical-align: top;
+    background-color: chartreuse;
+    border: 1px solid #000;
+}
+table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #fff;
+    background-color: #272727;
+    padding: 8px 5px;
+    text-align: center;
+    border: 1px solid #000;
+}

@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #1b1b1b;
+  color: #fff;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3e3e3e;
+  color: chartreuse;
+  width: 100%;
+  border: none;
+  height: 80px;
+}
+.header .nav{
+  list-style: none;
+  display: flex;
+}
+.header .nav .nav-item{
+  padding: 5px 12px;
+  margin: 0 10px;
+  font-weight: 700;
+  transition: .5s;
+  list-style: none;
+}
+.header .nav .nav-item a{
+  color: chartreuse;
+  font-weight: 700;
+  outline: none;
+  text-decoration: none;
+}
+.header .nav .nav-item:hover{
+  color: black;
+  background-color: chartreuse;
+  box-shadow: 0 0 10px chartreuse, 0 0 40px chartreuse, 0 0 80px chartreuse;
+}
+.header .nav .nav-item:hover a{
+  color: black;
+}
+.page{
+  text-align: center;
+  margin-top: 60px;
+}
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

@@ -1,0 +1,171 @@
+.container {
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  height: 70%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-width: 900px;
+  width: 800px;
+  z-index: 1000;
+  /* transform: translate(-50%,-50%); */
+}
+.container .header{
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0 30px 0 230px;
+    align-items: center;
+}
+.container .header .addButton{
+
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background-color: black;
+    color: chartreuse;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container .header .addButton:hover{
+    color: black;
+    background-color: chartreuse;
+    box-shadow: 0 0 10px chartreuse, 0 0 20px chartreuse, 0 0 30px chartreuse;
+}
+
+::-webkit-scrollbar {
+  background-color: chartreuse;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 10px;
+}
+.container .title-form {
+  color: chartreuse;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .task-list {
+  /* text-align: center; */
+  list-style: none;
+  margin-top: 10px;
+}
+/* .container .task {
+  
+  
+} */
+.card{
+    color: chartreuse;
+  font-weight: 600;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+  position: relative;
+  
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.done {
+  text-decoration: line-through;
+}
+.container .task .task-column {
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+.container .task .task-column:hover {
+  background-color: chartreuse !important;
+  color: #000;
+}
+.container .task .task-column:nth-child(2n + 1) {
+  background-color: #3b3b3b;
+  width: 70%;
+}
+.container .task .task-column:nth-child(2n) {
+  background-color: #242424;
+  width: 70%;
+}
+.container .task .btn-box {
+  display: flex;
+  justify-content: space-around;
+  width: 18%;
+  position: absolute;
+  right: 5%;
+  top: 38%;
+  
+}
+.container .task .btn-box img {
+  width: 30px;
+}
+.container .task .task-remove {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.container .task .task-remove img {
+  background-color: rgb(255, 14, 14);
+  border-radius: 100px;
+  padding: 3px;
+  transition: 0.5s;
+}
+.container .task .task-remove img:hover {
+  background-color: rgb(116, 0, 0);
+}
+.container .task .task-update {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.container form input[type="text"] {
+  padding: 5px 2px;
+  width: 350px;
+  height: 30px;
+  outline: none;
+  background-color: #242424;
+  border: solid 1px chartreuse;
+  color: chartreuse;
+}
+.container form button {
+  background-color: black;
+  color: chartreuse;
+  padding: 5px 2px;
+  width: 150px;
+  height: 30px;
+  border: transparent;
+  margin: 0;
+  transition: 0.5s;
+}
+.container form button:hover {
+  background-color: chartreuse;
+  color: black;
+}
+
+/* MODAL */
+.Modal{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1002;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardModal{
+      padding: 20px;
+      /* background-color: white; */
+      color: black;
+  }
+  .hide{
+      display: none;
+  }
